@@ -52,16 +52,16 @@ class Song:
             cls.artist_count[artist] = 1
 
 
-# song1 = Song("99 Problems", "Jay-Z", "Rap")
-# song2 = Song("Hotline Bling", "Drake", "Pop")
-# song3 = Song("Halo", "Beyoncé", "Pop")
-# song4 = Song("Empire State of Mind", "Jay-Z", "Rap")
-# song5 = Song("Single Ladies", "Beyoncé", "Pop")
+song1 = Song("99 Problems", "Jay-Z", "Rap")
+song2 = Song("Hotline Bling", "Drake", "Pop")
+song3 = Song("Halo", "Beyoncé", "Pop")
+song4 = Song("Empire State of Mind", "Jay-Z", "Rap")
+song5 = Song("Single Ladies", "Beyoncé", "Pop")
 
 
-# print(Song.count)  
-# print(Song.artists)  
-# print(Song.genres)  
-# print(Song.genre_count)  
-# print(Song.artist_count)  
+print(Song.count)  
+print(Song.artists)  
+print(Song.genres)  
+print(Song.genre_count)  
+print(Song.artist_count)  
 

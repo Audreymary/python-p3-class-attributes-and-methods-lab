@@ -1,4 +1,5 @@
 class Song:
+    # Class attributes
     count = 0
     genres = []
     artists = []
@@ -10,9 +11,10 @@ class Song:
         self.artist = artist
         self.genre = genre
         
-        
+        # Increment count of songs
         Song.add_song_to_count()
         
+        # Add to genres, artists, and update counts
         Song.add_to_genres(genre)
         Song.add_to_artists(artist)
         Song.add_to_genre_count(genre)
@@ -51,17 +53,17 @@ class Song:
         else:
             cls.artist_count[artist] = 1
 
+# Example usage:
+song1 = Song("99 Problems", "Jay-Z", "Rap")
+song2 = Song("Hotline Bling", "Drake", "Pop")
+song3 = Song("Halo", "Beyoncé", "Pop")
+song4 = Song("Empire State of Mind", "Jay-Z", "Rap")
+song5 = Song("Single Ladies", "Beyoncé", "Pop")
 
-# song1 = Song("99 Problems", "Jay-Z", "Rap")
-# song2 = Song("Hotline Bling", "Drake", "Pop")
-# song3 = Song("Halo", "Beyoncé", "Pop")
-# song4 = Song("Empire State of Mind", "Jay-Z", "Rap")
-# song5 = Song("Single Ladies", "Beyoncé", "Pop")
-
-
-# print(Song.count)  
-# print(Song.artists)  
-# print(Song.genres)  
-# print(Song.genre_count)  
-# print(Song.artist_count)  
+# Accessing the class attributes
+print(Song.count)  # Total song count
+print(Song.artists)  
+print(Song.genres)  
+print(Song.genre_count)  
+print(Song.artist_count)  
 
